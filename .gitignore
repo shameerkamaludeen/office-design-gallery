@@ -17,3 +17,6 @@
 
 # Avoid design images
 design/
+
+# Avoid icons collected while resource gathering
+icons/collection/
