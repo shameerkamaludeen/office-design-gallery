@@ -565,8 +565,6 @@ header .menu a:focus {
 .layout-section .layout-intro {
     background-color: var(--bc-primary);
     padding-top: 55px;
-    position: relative;
-    z-index: -2;
 }
 
 .layout-section .image-part {
@@ -610,9 +608,11 @@ header .menu a:focus {
     width: 90px;
     height: 98px;
     background-color: var(--bc-square-layout);
-    position: relative;
-    z-index: -1;
     opacity: 0.55;
+}
+
+.layout-section .content-wrapper {
+    position: relative;
 }
 
 .layout-section h3 {
@@ -732,8 +732,6 @@ header .menu a:focus {
 
 .ideas-section {
     background-color: var(--bc-neutral);
-    position: relative;
-    z-index: -2;
 }
 
 .ideas-section .section-container {
@@ -759,12 +757,11 @@ header .menu a:focus {
     width: 107px;
     height: 102px;
     background-color: var(--bc-square-neutral);
-    position: relative;
-    z-index: -1;
 }
 
 .ideas-section .content-wrapper {
     margin-top: -104px;
+    position: relative;
 }
 
 .ideas-section h3 {
