@@ -24,7 +24,7 @@ document.addEventListener('click', e => {
         let isClickedMenu = false;
 
         // checking the click is on or inside the menu container
-        if (document.documentElement.clientWidth <= 848) {
+        if (document.documentElement.clientWidth <= 1024) {
             // here the 'elements.length - 2' is for ignoring last two element (document and window) 
             for (let index = 0; index < elements.length - 2; index++) {
                 if (elements[index].classList.contains('menu-wrapper') || elements[index].classList.contains('hamburger')) {
