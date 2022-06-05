@@ -211,8 +211,9 @@ footer .logo-wrapper a {
 /* || Layout */
 
 .out-centered {
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 88%;
 }
 
 .in-centered {
@@ -872,6 +873,25 @@ footer p {
     color: var(--c-primary);
 }
 
+@media screen and (min-width: 27.5em) {
+    
+    /* || Layout */
+
+    .out-centered {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    nav.out-centered, 
+    footer .out-centered {
+        max-width: initial;
+    }
+    
+    .out-centered:not(nav.out-centered, .footer-content.out-centered) {
+        max-width: 540px;        
+    }
+}
+
 /* Mobile landscape */
 @media screen and (min-width: 40em) {
 
@@ -896,7 +916,6 @@ footer p {
     .out-centered:not(nav.out-centered, .footer-content.out-centered) {
         margin-right: auto;
         margin-left: auto;
-        max-width: 540px;
     }
 
     .in-centered {
@@ -916,7 +935,7 @@ footer p {
         height: 669px;
     }
 
-    #hero .hero-container {
+    .hero .hero-container {
         max-width: 485px;
     }
 
@@ -1217,7 +1236,7 @@ footer p {
     .out-centered:not(nav.out-centered, .footer-content.out-centered) {
         margin-right: 50px;
         margin-left: 50px;
-        max-width: 1140px;
+        max-width: 940px;
     }
 
     .in-centered {
@@ -1269,11 +1288,11 @@ footer p {
         position: relative;
     }
 
-    #hero .hero-container {
+    .hero .hero-container {
         position: absolute;
         bottom: 0;
         max-width: 512px;
-        padding: 36px 25px 113px;
+        padding: 36px 34px 113px;
     }
 
     .hero h2 {
@@ -1405,5 +1424,81 @@ footer p {
         flex: 1 0 48.5%;
         margin-bottom: 0;
         grid-auto-rows: 270px;
+    }
+}
+
+@media screen and (min-width: 65em) {
+
+    /* || Layout */
+
+    .out-centered:not(nav.out-centered, .footer-content.out-centered) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+}
+
+/* || Media query for EX screens/TV breakpoint */
+
+@media screen and (min-width: 75.0625em) {
+
+    /* || Typography */
+
+    .hero h2 {
+        font-size: 5rem;
+    }
+
+    /* || Layout */
+
+    .out-centered:not(nav.out-centered, .footer-content.out-centered) {
+        max-width: 1140px;
+    }
+
+    /* || Article */
+
+    .hero .hero-container {
+        max-width: 620px;
+        padding: 37px 34px 100px;
+    }
+
+    /* || Section consultancy */
+
+    .consultancy-section {
+        grid-template-columns: 617px auto;
+        gap: 0 65px;
+    }
+    
+    .consultancy-section .image-wrapper {
+        height: 196px;
+        margin-bottom: 106px;
+        margin-left: 40px;
+    }
+
+    .consultancy-section .image-part .square-background {
+        bottom: 115px;
+    }
+
+    .consultancy-section .image-part .img-wrapper {
+        height: 400px;
+    }
+
+    .consultancy-section .idea {
+        left: 0;
+        padding: 11px 28px;
+    }
+
+    .consultancy-section .navigation-part {
+        padding: 80px 0 66px;
+    }
+
+    /* || Sectio ideas */
+
+    .ideas-section .section-container {
+        padding-bottom: 50px;
+    }
+    
+    .ideas-section .ideas-gallery {
+        grid-auto-rows: 248px;
     }
 }
