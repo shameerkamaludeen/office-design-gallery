@@ -20,3 +20,7 @@ design/
 
 # Avoid icons collected while resource gathering
 icons/collection/
+
+# Avoid original screenshot which size is more than 4mb
+
+Screenshot 2022-06-05 at 13-43-01 Office Design Gallery.png
